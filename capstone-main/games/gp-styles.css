@@ -1,0 +1,23 @@
+body {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 60px auto 0 auto;
+    font-size: 3em;
+}
+
+canvas {
+    margin: 0 auto;
+    display: block;
+    padding-top: 60px;
+    order: 1;
+}
+
+#controls {
+    order: 2;
+}

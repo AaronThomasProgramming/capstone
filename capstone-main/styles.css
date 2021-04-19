@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #262626;
+}
+
+/* Main title and game titles */
+h1,
+h2,
+h3,
+p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+h1 {
+    margin: 60px auto 80px auto;
+    font-size: 8em;
+    width: max-content;
+}
+
+/* Centered and styled game cards */
+#container {
+    margin: 0 auto;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game card buttons */
+button {
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+button:hover {
+    color: white;
+    background-position: right center;
+}
+img {
+    margin: 10px;
+    max-height: 300px;
+}
+
+/* implementation taken from https://css-tricks.com/gradient-borders-in-css/ */
+/* Main title underline with gradient */
+.border-gradient {
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+.border-gradient-purple {
+    border-image-source: linear-gradient(to right, #5911d6, rgb(221, 8, 8), #dd2098);
+}
